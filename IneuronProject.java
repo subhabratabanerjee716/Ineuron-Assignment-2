@@ -32,6 +32,14 @@ class Guesser {
 		
 		guessno=sc.nextInt();
 		
+		if(guessno >10) {
+			
+			System.out.println("Please guess a no below or equal to 10");
+		
+			GuessNum();
+			
+		}
+		
 		return guessno;
 		
 		
@@ -77,6 +85,15 @@ class Umpire{
 		System.out.println("Enter the no of players needed :-");
 		
 		players = sc.nextInt();
+		
+		if(players>3) {
+			
+			System.out.println("This is a 3 player game .");
+			
+			startGame();
+			
+			return;
+		}
 		
 		for(int i=0;i<players;i++) {
 			
@@ -157,3 +174,5 @@ class Umpire{
 	
 	
 }
+
+	
